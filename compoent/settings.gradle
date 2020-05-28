@@ -1,2 +1,4 @@
-rootProject.name='compoent'
 include ':app'
+include ':java'
+include ':kotlin'
+include ':common'

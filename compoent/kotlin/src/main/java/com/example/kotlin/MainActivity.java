@@ -1,4 +1,4 @@
-package com.example.compoent;
+package com.example.kotlin;
 
 import android.os.Bundle;
 

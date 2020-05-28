@@ -1,0 +1,2 @@
+rootProject.name='compoent'
+include ':app'

@@ -3,6 +3,7 @@
     package="com.example.java">
     <application
         android:theme="@style/AppTheme">
+        <activity android:name="com.example.java.TestActivity" />
     </application>
 
 </manifest>

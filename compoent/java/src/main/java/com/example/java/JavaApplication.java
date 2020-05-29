@@ -1,6 +1,7 @@
 package com.example.java;
 
-import android.app.Application;
+import com.example.common.BaseApplication;
 
-public class JavaApplication extends Application {
+public class JavaApplication extends BaseApplication {
+
 }

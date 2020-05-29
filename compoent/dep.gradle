@@ -1,0 +1,9 @@
+
+ext {
+    depAnnotationProcessor = {
+        project.dependencies {
+            annotationProcessor 'com.alibaba:arouter-compiler:1.1.4'
+        }
+    }
+
+}

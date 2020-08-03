@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:drawable="@drawable/method_draw_image"
+    tools:targetApi="lollipop">
+
+    <target
+        android:name="svg_1"
+        android:animation="@animator/comstom"></target>
+    <target
+        android:name="svg_2"
+        android:animation="@animator/comstom"></target>
+
+    <target
+        android:name="svg_3"
+        android:animation="@animator/comstom"></target>
+</animated-vector>

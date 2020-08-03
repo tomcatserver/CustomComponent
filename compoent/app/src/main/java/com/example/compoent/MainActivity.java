@@ -48,5 +48,17 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        findViewById(R.id.tv_video).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ARouter.getInstance().build("/video/com/example/TestActivity").withString("keyJava", "我是从app壳工程来的").navigation();
+            }
+        });
+        findViewById(R.id.tv_live).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ARouter.getInstance().build("/livemoudle/com/example/TestActivity").withString("keyJava", "我是从app壳工程来的").navigation();
+            }
+        });
     }
 }

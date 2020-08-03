@@ -10,7 +10,7 @@ import com.example.common.service.IJavaTestService;
 public class JavaService implements IJavaTestService {
     @Override
     public String outContent(String content) {
-        Log.e("tag", "outContent: ---------/com/example/java/JavaService" );
+        Log.e("tag", "outContent: ---------/com/example/java/JavaService,=" + content);
         return "this is a test JavaService + " + content;
     }
 

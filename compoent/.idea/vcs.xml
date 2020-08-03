@@ -2,5 +2,11 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DynamicTest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dex-shell" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ijkPlayerMD2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ijkplayer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ijkplayer/extra/ffmpeg" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kgplayer" vcs="Git" />
   </component>
 </project>

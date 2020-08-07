@@ -28,8 +28,39 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 //        printDouble(pi)
         control();
-        val person = Person()
+        val list = mutableListOf<String>("a", "b", "c")
+        System.out.println("list-----pre-" + list)
+        list.swaps(0, 2)
+        System.out.println("list-----end-" + list)
+        printClassName(Rectangle())
+        val s = listOf<String>("", "", "")
+        val box = Box(0)
+        val user = User("sdd", 1)
+        val foo = Outer.Nested().foo()
+        val foo1 = Outer().Inner().foo()
+        val b=BaseImpl(10)
+        Dervied(b).print()
 
+    }
+    fun<T> copyWhen(list: List<T>,thread:T) : List<String> where T : CharSequence,T:kotlin.Comparable<T>{
+     return list.filter { it>thread }.map { it.toString() }
+    }
+
+
+    fun demo(strs: Source<String>) {
+        val ss: Source<Any> = strs
+    }
+
+    fun demo1(x: Comparable<Number>) {
+        val compareTo = x.compareTo(1.0)
+        val y: Comparable<Double> = x
+
+    }
+
+    fun <T> MutableList<T>.swaps(index1: Int, index2: Int) {
+        val tmp = this[index1]
+        this[index1] = this[index2]
+        this[index2] = tmp
     }
 
     private fun control() {
@@ -77,19 +108,20 @@ class MainActivity : AppCompatActivity() {
         for (i in 6 downTo 0 step 2) {
             print(i)
         }
-         listOf<Int>(1, 2, 3, 45, 6).forEach { if (it == 3) return
+        listOf<Int>(1, 2, 3, 45, 6).forEach {
+            if (it == 3) return
             print(it)
         }
-        listOf<Int>(12,3,4,5,5).forEach ss@{
-            if(it==3)return@ss
+        listOf<Int>(12, 3, 4, 5, 5).forEach ss@{
+            if (it == 3) return@ss
             print(it)
         }
-        listOf<Int>(1,2,3,4,5).forEach{
-            if(it==3)return@forEach
+        listOf<Int>(1, 2, 3, 4, 5).forEach {
+            if (it == 3) return@forEach
             print(it)
         }
-        listOf<Int>(1,2,3,4,5).forEach(fun (value:Int){
-            if(value==3)return
+        listOf<Int>(1, 2, 3, 4, 5).forEach(fun(value: Int) {
+            if (value == 3) return
             print(value)
         })
         listOf<Int>()

@@ -1,5 +1,11 @@
 package com.example.kontlin
 
-open abstract class Shape {
-    abstract fun draws()
+open class Shape {
+    fun getName() {
+        print("class Shape")
+    }
+    fun toStrings():String{
+        return toString()
+    }
+    val <T> List<T>.lastIndexs:Int get() = size-1
 }
